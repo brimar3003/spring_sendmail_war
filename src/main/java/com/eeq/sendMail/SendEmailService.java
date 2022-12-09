@@ -33,7 +33,7 @@ public class SendEmailService {
         
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
-        mimeMessageHelper.setFrom("bmarquez@megaproductosfamiliares.com");
+        mimeMessageHelper.setFrom("Brian Marquez");
         mimeMessageHelper.setTo(data.get("to").toString());
         mimeMessageHelper.setText(data.get("text").toString(), data.get("html").toString());
         mimeMessageHelper.setSubject(data.get("subject").toString());
